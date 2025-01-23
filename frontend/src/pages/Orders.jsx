@@ -19,8 +19,8 @@ const Orders = () => {
           return null
         }
 
-        //const respones = await axios.post( backendUrl + '/api/order/userorders',{},{headers:{ Authorization: `Bearer ${token}` }})
-        const respones = await  axios.post(backendUrl + '/api/order/userorders', {params: {orderId: respones.data.orders[0].id}})
+        const respones = await axios.post( backendUrl + '/api/order/userorders',{},{headers:{ Authorization: `Bearer ${token}` }})
+       // const respones = await  axios.post(backendUrl + '/api/order/userorders', {params: {orderId: respones.data.orders[0].id}})
         console.log(respones.data);
        
         setorderData(respones.data)

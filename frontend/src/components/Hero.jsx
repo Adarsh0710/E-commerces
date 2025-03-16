@@ -8,7 +8,7 @@ const Hero = () => {
       <div className='flex w-full h-[100vh]'> {/* Reduced height */}
         <img 
           className='w-full object-cover'  // Ensures proper scaling
-          src={assets.hero_img} 
+          src={assets.hero_img3} 
           alt="" 
         />
       </div>
